@@ -48,7 +48,7 @@ local Title_3 = Instance.new("TextLabel")
 --Properties:
 
 Lunar.Name = "Lunar"
-Lunar.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Lunar.Parent = game.CoreGui
 Lunar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Loading.Name = "Loading"
