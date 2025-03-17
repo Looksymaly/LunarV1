@@ -4,40 +4,50 @@
 -- Instances:
 
 local Lunar = Instance.new("ScreenGui")
-local Loading = Instance.new("Frame")
+local Main = Instance.new("Frame")
 local Icon8 = Instance.new("ImageLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local Bar = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Progress = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local UICorner_3 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local Main = Instance.new("Frame")
-local Icon8_2 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local UICorner_4 = Instance.new("UICorner")
 local Title = Instance.new("TextLabel")
 local Slogan = Instance.new("TextLabel")
 local CommandEditor = Instance.new("TextBox")
 local Run = Instance.new("ImageButton")
-local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local UICorner_5 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local UICorner_2 = Instance.new("UICorner")
 local Inject = Instance.new("ImageButton")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local UICorner_6 = Instance.new("UICorner")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UICorner_3 = Instance.new("UICorner")
 local Clear = Instance.new("ImageButton")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
-local UICorner_7 = Instance.new("UICorner")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UICorner_4 = Instance.new("UICorner")
 local Hide = Instance.new("ImageButton")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
-local UICorner_8 = Instance.new("UICorner")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UICorner_5 = Instance.new("UICorner")
 local Close = Instance.new("ImageButton")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local UICorner_6 = Instance.new("UICorner")
+local Cmds = Instance.new("ImageButton")
 local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local UICorner_7 = Instance.new("UICorner")
+local commands = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local ConfirmScreen = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local Yes = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
+local No = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local Notif = Instance.new("Frame")
-local Icon8_3 = Instance.new("ImageLabel")
+local Icon8_2 = Instance.new("ImageLabel")
 local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
 local Title_2 = Instance.new("TextLabel")
 local Des = Instance.new("TextLabel")
@@ -48,80 +58,9 @@ local Title_3 = Instance.new("TextLabel")
 --Properties:
 
 Lunar.Name = "Lunar"
-Lunar.Parent = game.CoreGui
+Lunar.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Lunar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Loading.Name = "Loading"
-Loading.Parent = Lunar
-Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Loading.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Loading.BorderSizePixel = 0
-Loading.Position = UDim2.new(0.31362468, 0, 0.29801324, 0)
-Loading.Size = UDim2.new(0.371122509, 0, 0.400993377, 0)
-
-Icon8.Name = "Icon8"
-Icon8.Parent = Loading
-Icon8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Icon8.BackgroundTransparency = 1.000
-Icon8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Icon8.BorderSizePixel = 0
-Icon8.Position = UDim2.new(0.417669892, 0, 0.119639806, 0)
-Icon8.Size = UDim2.new(0.200451717, 0, 0.299649209, 0)
-Icon8.Image = "rbxassetid://14491200671"
-
-UIAspectRatioConstraint.Parent = Icon8
-
-Bar.Name = "Bar"
-Bar.Parent = Loading
-Bar.BackgroundColor3 = Color3.fromRGB(233, 233, 233)
-Bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Bar.BorderSizePixel = 0
-Bar.Position = UDim2.new(0.0511481911, 0, 0.786975861, 0)
-Bar.Size = UDim2.new(0.89697212, 0, 0.0902870223, 0)
-
-UICorner.CornerRadius = UDim.new(0.5, 0)
-UICorner.Parent = Bar
-
-Progress.Name = "Progress"
-Progress.Parent = Bar
-Progress.BackgroundColor3 = Color3.fromRGB(0, 134, 0)
-Progress.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Progress.BorderSizePixel = 0
-Progress.Position = UDim2.new(0.00032149913, 0, -0.0208140779, 0)
-Progress.Size = UDim2.new(0, 0, 1, 0)
-
-UICorner_2.CornerRadius = UDim.new(0.5, 0)
-UICorner_2.Parent = Progress
-
-UICorner_3.Parent = Loading
-
-TextLabel.Parent = Loading
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.330096364, 0, 0.464886159, 0)
-TextLabel.Size = UDim2.new(0.340828806, 0, 0.149455965, 0)
-TextLabel.Font = Enum.Font.Unknown
-TextLabel.Text = "LUNAR"
-TextLabel.TextColor3 = Color3.fromRGB(95, 95, 95)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-TextLabel_2.Parent = Loading
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.330096364, 0, 0.613523662, 0)
-TextLabel_2.Size = UDim2.new(0.340828806, 0, 0.0833948776, 0)
-TextLabel_2.Font = Enum.Font.Unknown
-TextLabel_2.Text = "Simplify the Process."
-TextLabel_2.TextColor3 = Color3.fromRGB(95, 95, 95)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
+Lunar.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = Lunar
@@ -130,21 +69,20 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.31362468, 0, 0.29801324, 0)
 Main.Size = UDim2.new(0.371122509, 0, 0.400993377, 0)
-Main.Visible = false
 
-Icon8_2.Name = "Icon8"
-Icon8_2.Parent = Main
-Icon8_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Icon8_2.BackgroundTransparency = 1.000
-Icon8_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Icon8_2.BorderSizePixel = 0
-Icon8_2.Position = UDim2.new(0.048240114, 0, 0.0866092518, 0)
-Icon8_2.Size = UDim2.new(0.112156659, 0, 0.254232198, 0)
-Icon8_2.Image = "rbxassetid://14491200671"
+Icon8.Name = "Icon8"
+Icon8.Parent = Main
+Icon8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon8.BackgroundTransparency = 1.000
+Icon8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Icon8.BorderSizePixel = 0
+Icon8.Position = UDim2.new(0.048240114, 0, 0.0866092518, 0)
+Icon8.Size = UDim2.new(0.112156659, 0, 0.254232198, 0)
+Icon8.Image = "rbxassetid://14491200671"
 
-UIAspectRatioConstraint_2.Parent = Icon8_2
+UIAspectRatioConstraint.Parent = Icon8
 
-UICorner_4.Parent = Main
+UICorner.Parent = Main
 
 Title.Name = "Title"
 Title.Parent = Main
@@ -183,8 +121,8 @@ CommandEditor.Parent = Main
 CommandEditor.BackgroundColor3 = Color3.fromRGB(244, 244, 244)
 CommandEditor.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CommandEditor.BorderSizePixel = 0
-CommandEditor.Position = UDim2.new(0.161625504, 0, 0.809248567, 0)
-CommandEditor.Size = UDim2.new(0, 348, 0, 33)
+CommandEditor.Position = UDim2.new(0.159316629, 0, 0.796862006, 0)
+CommandEditor.Size = UDim2.new(0.769591331, 0, 0.154583022, 0)
 CommandEditor.ClearTextOnFocus = false
 CommandEditor.Font = Enum.Font.Unknown
 CommandEditor.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
@@ -203,9 +141,9 @@ Run.Size = UDim2.new(0.10722696, 0, 0.166969463, 0)
 Run.Image = "rbxassetid://7360647679"
 Run.ImageColor3 = Color3.fromRGB(10, 10, 10)
 
-UIAspectRatioConstraint_3.Parent = Run
+UIAspectRatioConstraint_2.Parent = Run
 
-UICorner_5.Parent = Run
+UICorner_2.Parent = Run
 
 Inject.Name = "Inject"
 Inject.Parent = Main
@@ -217,9 +155,9 @@ Inject.Size = UDim2.new(0.10722696, 0, 0.166969463, 0)
 Inject.Image = "rbxassetid://13353741942"
 Inject.ImageColor3 = Color3.fromRGB(10, 10, 10)
 
-UIAspectRatioConstraint_4.Parent = Inject
+UIAspectRatioConstraint_3.Parent = Inject
 
-UICorner_6.Parent = Inject
+UICorner_3.Parent = Inject
 
 Clear.Name = "Clear"
 Clear.Parent = Main
@@ -231,9 +169,9 @@ Clear.Size = UDim2.new(0.10722696, 0, 0.166969463, 0)
 Clear.Image = "rbxassetid://11768945414"
 Clear.ImageColor3 = Color3.fromRGB(10, 10, 10)
 
-UIAspectRatioConstraint_5.Parent = Clear
+UIAspectRatioConstraint_4.Parent = Clear
 
-UICorner_7.Parent = Clear
+UICorner_4.Parent = Clear
 
 Hide.Name = "Hide"
 Hide.Parent = Main
@@ -245,9 +183,9 @@ Hide.Size = UDim2.new(0.10722696, 0, 0.166969463, 0)
 Hide.Image = "rbxassetid://14996669677"
 Hide.ImageColor3 = Color3.fromRGB(10, 10, 10)
 
-UIAspectRatioConstraint_6.Parent = Hide
+UIAspectRatioConstraint_5.Parent = Hide
 
-UICorner_8.Parent = Hide
+UICorner_5.Parent = Hide
 
 Close.Name = "Close"
 Close.Parent = Main
@@ -259,9 +197,200 @@ Close.Size = UDim2.new(0.10722696, 0, 0.166969463, 0)
 Close.Image = "rbxassetid://10002373478"
 Close.ImageColor3 = Color3.fromRGB(10, 10, 10)
 
-UIAspectRatioConstraint_7.Parent = Close
+UIAspectRatioConstraint_6.Parent = Close
 
-UICorner_9.Parent = Close
+UICorner_6.Parent = Close
+
+Cmds.Name = "Cmds"
+Cmds.Parent = Main
+Cmds.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+Cmds.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Cmds.BorderSizePixel = 0
+Cmds.Position = UDim2.new(0.575591385, 0, 0.586292326, 0)
+Cmds.Size = UDim2.new(0.10722696, 0, 0.166969463, 0)
+Cmds.Image = "rbxassetid://16149179345"
+Cmds.ImageColor3 = Color3.fromRGB(10, 10, 10)
+
+UIAspectRatioConstraint_7.Parent = Cmds
+
+UICorner_7.Parent = Cmds
+
+commands.Name = "commands"
+commands.Parent = Main
+commands.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+commands.BorderColor3 = Color3.fromRGB(0, 0, 0)
+commands.BorderSizePixel = 0
+commands.Position = UDim2.new(-0.476866633, 0, -0.185796931, 0)
+commands.Size = UDim2.new(0.39814496, 0, 1.37118089, 0)
+commands.Visible = false
+
+UICorner_8.Parent = commands
+
+TextLabel.Parent = commands
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0930271521, 0, 0.0488672256, 0)
+TextLabel.Size = UDim2.new(0.80351609, 0, 0.113734424, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Cmds"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = commands
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0930271521, 0, 0.198182911, 0)
+TextLabel_2.Size = UDim2.new(0.80351609, 0, 0.0568355583, 0)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "/destroyworkspace"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = commands
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0930271521, 0, 0.288517147, 0)
+TextLabel_3.Size = UDim2.new(0.80351609, 0, 0.0568355583, 0)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "/fly"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = commands
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0930271521, 0, 0.396918207, 0)
+TextLabel_4.Size = UDim2.new(0.80351609, 0, 0.0568355583, 0)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "/walkspeed [num]"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = commands
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0930271521, 0, 0.505319297, 0)
+TextLabel_5.Size = UDim2.new(0.80351609, 0, 0.0568355583, 0)
+TextLabel_5.Font = Enum.Font.Unknown
+TextLabel_5.Text = "/rbxkiller"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = commands
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0930271521, 0, 0.625764966, 0)
+TextLabel_6.Size = UDim2.new(0.80351609, 0, 0.0568355583, 0)
+TextLabel_6.Font = Enum.Font.Unknown
+TextLabel_6.Text = "/jumppower [num]"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = commands
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0930271521, 0, 0.743199468, 0)
+TextLabel_7.Size = UDim2.new(0.80351609, 0, 0.0568355583, 0)
+TextLabel_7.Font = Enum.Font.Unknown
+TextLabel_7.Text = "/lunarscanner"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = commands
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.0930271521, 0, 0.836544812, 0)
+TextLabel_8.Size = UDim2.new(0.80351609, 0, 0.0568355583, 0)
+TextLabel_8.Font = Enum.Font.Unknown
+TextLabel_8.Text = "/togglefloat"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+ConfirmScreen.Name = "ConfirmScreen"
+ConfirmScreen.Parent = Main
+ConfirmScreen.BackgroundColor3 = Color3.fromRGB(233, 233, 233)
+ConfirmScreen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ConfirmScreen.BorderSizePixel = 0
+ConfirmScreen.Position = UDim2.new(0.150080815, 0, 0.144508615, 0)
+ConfirmScreen.Size = UDim2.new(0.69983834, 0, 0.715111434, 0)
+ConfirmScreen.Visible = false
+ConfirmScreen.ZIndex = 255555555
+
+TextLabel_9.Parent = ConfirmScreen
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.0902777761, 0, 0.0740740746, 0)
+TextLabel_9.Size = UDim2.new(0.819444418, 0, 0.378306866, 0)
+TextLabel_9.Font = Enum.Font.Unknown
+TextLabel_9.Text = "Are your sure you want to close it will close forever until u run it again"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+Yes.Name = "Yes"
+Yes.Parent = ConfirmScreen
+Yes.BackgroundColor3 = Color3.fromRGB(0, 159, 72)
+Yes.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Yes.BorderSizePixel = 0
+Yes.Position = UDim2.new(0.0231482182, 0, 0.75661391, 0)
+Yes.Size = UDim2.new(0.209769249, 0, 0.200529188, 0)
+Yes.Font = Enum.Font.Unknown
+Yes.Text = " "
+Yes.TextColor3 = Color3.fromRGB(255, 255, 255)
+Yes.TextSize = 20.000
+
+UICorner_9.Parent = Yes
+
+No.Name = "No"
+No.Parent = ConfirmScreen
+No.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+No.BorderColor3 = Color3.fromRGB(0, 0, 0)
+No.BorderSizePixel = 0
+No.Position = UDim2.new(0.740740716, 0, 0.75661391, 0)
+No.Size = UDim2.new(0.209769249, 0, 0.200529188, 0)
+No.Font = Enum.Font.Unknown
+No.Text = " "
+No.TextColor3 = Color3.fromRGB(255, 255, 255)
+No.TextSize = 20.000
+
+UICorner_10.Parent = No
+
+UICorner_11.Parent = ConfirmScreen
 
 Notif.Name = "Notif"
 Notif.Parent = Lunar
@@ -271,17 +400,17 @@ Notif.BorderSizePixel = 0
 Notif.Position = UDim2.new(0.352999985, 0, 0.0149999997, 0)
 Notif.Size = UDim2.new(0.292802095, 0, 0.22913906, 0)
 
-Icon8_3.Name = "Icon8"
-Icon8_3.Parent = Notif
-Icon8_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Icon8_3.BackgroundTransparency = 1.000
-Icon8_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Icon8_3.BorderSizePixel = 0
-Icon8_3.Position = UDim2.new(0.0423870087, 0, 0.0793838501, 0)
-Icon8_3.Size = UDim2.new(0.176136151, 0, 0.297584772, 0)
-Icon8_3.Image = "rbxassetid://14491200671"
+Icon8_2.Name = "Icon8"
+Icon8_2.Parent = Notif
+Icon8_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon8_2.BackgroundTransparency = 1.000
+Icon8_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Icon8_2.BorderSizePixel = 0
+Icon8_2.Position = UDim2.new(0.0423870087, 0, 0.0793838501, 0)
+Icon8_2.Size = UDim2.new(0.176136151, 0, 0.297584772, 0)
+Icon8_2.Image = "rbxassetid://14491200671"
 
-UIAspectRatioConstraint_8.Parent = Icon8_3
+UIAspectRatioConstraint_8.Parent = Icon8_2
 
 Title_2.Name = "Title"
 Title_2.Parent = Notif
@@ -346,203 +475,24 @@ Title_3.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function OUNN_fake_script() -- Loading.Draggable 
-	local script = Instance.new('LocalScript', Loading)
-
-	-- Very simple Drag
-	
-	script.Parent.Active = true script.Parent.Draggable = true
-end
-coroutine.wrap(OUNN_fake_script)()
-local function UTRNIQ_fake_script() -- Loading.Handler 
-	local script = Instance.new('LocalScript', Loading)
-
-	
-	for _, descendant in pairs(script.Parent.Parent.Main:GetDescendants()) do
-		if descendant:IsA("Frame") or descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("ImageLabel") or descendant:IsA("TextBox") then
-			descendant.Transparency = 1
-		end
-	end
-	
-	for _, descendant in pairs(script.Parent.Parent.Main:GetDescendants()) do
-		if descendant:IsA("ImageLabel") then
-			descendant.ImageTransparency = 1
-		end
-	end
-	
-	for _, descendant in pairs(script.Parent.Parent.Main:GetDescendants()) do
-		if descendant:IsA("ImageButton") then
-			descendant.BackgroundTransparency = 1
-			descendant.ImageTransparency = 1
-		end
-	end
-	
-	local TweenService = game:GetService("TweenService")
-	local player = game.Players.LocalPlayer
-	local bar = script.Parent.Bar.Progress
-	
-	print("🌕 Lunar loading...")
-	
-	-- Tween function
-	local function tweenBar(goalSize, duration)
-		local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out)
-		local goal = {Size = UDim2.new(goalSize, 0, 1, 0)}
-		local tween = TweenService:Create(bar, tweenInfo, goal)
-		tween:Play()
-		tween.Completed:Wait()
-	end
-	
-	-- Step 1: Check Filtering Enabled (FE)
-	wait(2)
-	tweenBar(0.1, 1.3)
-	print("Checking FE...")
-	if not game.SoundService.RespectFilteringEnabled then
-		print("🟢 Loaded FE")
-	else
-		warn("FE didnt get Loaded. Some things may be client sided.")
-	end
-	
-	-- Step 2: Load Player
-	wait(3)
-	tweenBar(0.2, 1.3)
-	if player then
-		print("🟢 Loaded Player")
-	else
-		print("Player not recognized...")
-	end
-	
-	-- Step 3: Inject
-	wait(1.5)
-	tweenBar(0.35, 1.3)
-	print(player.Name .. " has been injected...")
-	
-	-- Step 4: Final Loading
-	wait(0.6)
-	tweenBar(0.85, 1.3)
-	print("🌕 Lunar Loaded...")
-	
-	wait(2)
-	tweenBar(1, 0.5)
-	
-	-- Ensure full size
-	if bar.Size.X.Scale == 1 then
-		bar.Size = UDim2.new(1, 0, 1, 0)
-	end
-	
-	
-	for _, descendant in pairs(script.Parent:GetDescendants()) do
-		if descendant:IsA("Frame") then
-			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
-			local tweenGoal = {Transparency = 1}
-			local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
-	
-			tween:Play()
-			tween.Completed:Wait() 
-		end
-	end
-	
-	
-	for _, descendant in pairs(script.Parent:GetDescendants()) do
-		if descendant:IsA("TextLabel") then
-			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
-			local tweenGoal = {TextTransparency = 1}
-			local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
-	
-			tween:Play() 
-		end
-	end
-	wait(1.3)
-	
-	for _, descendant in pairs(script.Parent:GetDescendants()) do
-		if descendant:IsA("ImageLabel") then
-			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
-			local tweenGoal = {ImageTransparency = 1}
-			local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
-	
-			tween:Play()
-			tween.Completed:Wait() 
-		end
-	end
-	
-	wait(0.5)
-	script.Parent.Visible = false
-	script.Parent.Parent.Main.Position = script.Parent.Position
-	script.Parent.Parent.Main.Visible = true
-	print("🌕 Lunar running...")
-	
-	for _, descendant in pairs(script.Parent.Parent.Main:GetDescendants()) do
-		if descendant:IsA("Frame") then
-			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
-			local tweenGoal = {Transparency = 0}
-			local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
-	
-			tween:Play()
-			tween.Completed:Wait() 
-		end
-	end
-	
-	
-	for _, descendant in pairs(script.Parent.Parent.Main:GetDescendants()) do
-		if descendant:IsA("TextLabel") then
-			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
-			local tweenGoal = {TextTransparency = 0}
-			local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
-	
-			tween:Play() 
-		end
-	end
-	wait(1.3)
-	
-	for _, descendant in pairs(script.Parent.Parent.Main:GetDescendants()) do
-		if descendant:IsA("ImageLabel") then
-			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
-			local tweenGoal = {ImageTransparency = 0}
-			local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
-	
-			tween:Play()
-			tween.Completed:Wait() 
-		end
-	end
-	
-	for _, descendant in pairs(script.Parent.Parent.Main:GetDescendants()) do
-		if descendant:IsA("ImageButton") or descendant:IsA("TextBox") then
-			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
-			local tweenGoal = {Transparency = 0}
-			local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
-	
-			tween:Play() 
-		end
-	end
-	
-	for _, descendant in pairs(script.Parent.Parent.Main:GetDescendants()) do
-		if descendant:IsA("ImageButton") then
-			local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
-			local tweenGoal = {ImageTransparency = 0}
-			local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
-	
-			tween:Play() 
-		end
-	end
-end
-coroutine.wrap(UTRNIQ_fake_script)()
-local function CXQURDM_fake_script() -- Main.Draggable 
+local function IWBDZSF_fake_script() -- Main.Draggable 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Very simple Drag
 	
 	script.Parent.Active = true script.Parent.Draggable = true
 end
-coroutine.wrap(CXQURDM_fake_script)()
-local function XWYGB_fake_script() -- Main.LocalScript 
+coroutine.wrap(IWBDZSF_fake_script)()
+local function AIEFOFC_fake_script() -- Main.Handler 
 	local script = Instance.new('LocalScript', Main)
 
-	-- Varibles --
+	-- Variables --
 	
 	local Gui = script.Parent
 	local ClearBtn = Gui.Clear
 	local RunBtn = Gui.Run
 	local HideBtn = Gui.Hide
-	local CloseBtn = Gui.Close
+	local CloseBtn = Gui.ConfirmScreen.Yes
 	local InjectBtn = Gui.Inject
 	local CommandTxtBox = Gui.CommandEditor
 	local TweenService = game:GetService("TweenService")
@@ -552,20 +502,6 @@ local function XWYGB_fake_script() -- Main.LocalScript
 	-- Inject propities --
 	
 	local isinjected = false
-	
-	-- Commands Functions --
-	
-	local function walkspeedset(WalkNum)
-		if WalkNum then
-			player.Character.Humanoid.WalkSpeed = WalkNum
-		end
-	end
-	
-	local function jumppowerset(JumpNum)
-		if JumpNum then
-			player.Character.Humanoid.WalkSpeed = JumpNum
-		end
-	end
 	
 	-- Functions --
 	
@@ -594,12 +530,85 @@ local function XWYGB_fake_script() -- Main.LocalScript
 			player.Character.Humanoid.JumpPower = JumpNum  -- Corrected to set JumpPower instead of WalkSpeed
 		end
 	end
+	-- Function to get a random player
+	local function getRandomPlayer()
+		local players = game.Players:GetPlayers()
+		if #players == 0 then return nil end
+		return players[math.random(1, #players)]
+	end
+	
+	-- Function to get all players
+	local function getAllPlayers()
+		return game.Players:GetPlayers()
+	end
+	
+	-- Kick Player function (for single, all, or random)
+	local function kickPlayer(command)
+		-- Split the command to get the target player name
+		local args = string.split(command, " ")
+	
+		-- Check if the command is "/kick"
+		if args[1] == "/to" then
+			-- Handle "all" case
+	
+				-- Handle "random" case
+			elseif args[2] == "random" then
+				local target = getRandomPlayer()
+				if target then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = target.Character.HumanoidRootPart.CFrame
+					print("[SUCCESS] Kicked player: " .. target.Name)
+				else
+					print("[ERROR] No players found to kick.")
+				end
+				-- Handle specific player case
+			elseif args[2] then
+				local targetPlayerName = args[2]
+				local target = game.Players:FindFirstChild(targetPlayerName)
+				if target then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = target.Character.HumanoidRootPart.CFrame
+					print("[SUCCESS] Kicked player: " .. targetPlayerName)
+				else
+					print("[ERROR] Player not found: " .. targetPlayerName)
+				end
+			end
+		end
+	
+	
+	local flying = false  -- To keep track of whether the player is flying
+	
+	local function flyPlayer()
+		if not flying then
+			-- Enable flying
+			flying = true
+			local bodyGyro = Instance.new("BodyGyro")
+			bodyGyro.MaxTorque = Vector3.new(400000, 400000, 400000)
+			bodyGyro.CFrame = player.Character.HumanoidRootPart.CFrame
+			bodyGyro.Parent = player.Character.HumanoidRootPart
+	
+			local bodyVelocity = Instance.new("BodyVelocity")
+			bodyVelocity.MaxForce = Vector3.new(400000, 400000, 400000)
+			bodyVelocity.Velocity = Vector3.new(0, 50, 0) -- Adjust the upwards force for fly speed
+			bodyVelocity.Parent = player.Character.HumanoidRootPart
+	
+			print("[SUCCESS] You are now flying.")
+		else
+			-- Disable flying
+			flying = false
+			for _, v in pairs(player.Character.HumanoidRootPart:GetChildren()) do
+				if v:IsA("BodyGyro") or v:IsA("BodyVelocity") then
+					v:Destroy()
+				end
+			end
+			print("[SUCCESS] You have stopped flying.")
+		end
+	end
+	
 	
 	-- Run Function --
 	
 	local function Run()
 		if isinjected then
-			local command = CommandTxtBox.Text:lower()
+			local command = CommandTxtBox.Text
 	
 			if command == "/playallsounds" then
 				for _, sounds in pairs(game:GetDescendants()) do
@@ -665,7 +674,7 @@ local function XWYGB_fake_script() -- Main.LocalScript
 				tween.Completed:Wait()
 				Notif:Play()
 				wait(5)
-				local part = script.Parent.Notif
+				local part = script.Parent.Parent.Notif
 				local targetPosition = UDim2.new(0.353, 0, -1.2, 0)
 				local tweenTime = 2
 				local tweenInfo = TweenInfo.new(tweenTime, Enum.EasingStyle.Exponential, Enum.EasingDirection.InOut, 0, false)
@@ -673,87 +682,199 @@ local function XWYGB_fake_script() -- Main.LocalScript
 				local tween = TweenService:Create(part, tweenInfo, goal)
 				tween:Play()
 			end
+			
+			-- Kick player
+			
+			kickPlayer(command)
+			
+			if command == "/togglefloat" then
+				flyPlayer()  -- Toggle flying
+			end
+			
+			if command == "/lunarscanner" then
+				-- Gui to Lua
+				-- Version: 3.2
 	
-			-- Kick Command
-			if command:match("^/kick%s*(random|all|others|%w+)$") then
-				local target = command:match("^/kick%s*(%w+)$") or command:match("^/kick%s*(random|all|others)$")
+				-- Instances:
 	
-				if target == "random" then
-					local players = game.Players:GetPlayers()
-					local randomPlayer = players[math.random(1, #players)]
-					randomPlayer:Kick("You have been kicked!")
-				elseif target == "all" then
-					for _, player in ipairs(game.Players:GetPlayers()) do
-						player:Kick("You have been kicked!")
-					end
-				elseif target == "others" then
-					for _, player in ipairs(game.Players:GetPlayers()) do
-						if player ~= game.Players.LocalPlayer then
-							player:Kick("You have been kicked!")
+				local ScreenGui = Instance.new("ScreenGui")
+				local Frame = Instance.new("Frame")
+				local TextButton = Instance.new("TextButton")
+				local TextLabel = Instance.new("TextLabel")
+				local Copy = Instance.new("TextButton")
+				local Remote = Instance.new("Frame")
+				local UIPageLayout = Instance.new("UIPageLayout")
+	
+				--Properties:
+	
+				ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+				ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+				Frame.Parent = ScreenGui
+				Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+				Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Frame.BorderSizePixel = 0
+				Frame.Position = UDim2.new(0.0779777095, 0, 0.619205296, 0)
+				Frame.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+	
+				TextButton.Parent = Frame
+				TextButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+				TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				TextButton.BorderSizePixel = 0
+				TextButton.Position = UDim2.new(0.199942917, 0, 0.838852048, 0)
+				TextButton.Size = UDim2.new(0.599857152, 0, 0.116556302, 0)
+				TextButton.Font = Enum.Font.Gotham
+				TextButton.Text = "Scan"
+				TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextButton.TextScaled = true
+				TextButton.TextSize = 14.000
+				TextButton.TextWrapped = true
+	
+				TextLabel.Parent = TextButton
+				TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				TextLabel.BackgroundTransparency = 1.000
+				TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				TextLabel.BorderSizePixel = 0
+				TextLabel.Position = UDim2.new(0.154241815, 0, 0.286975533, 0)
+				TextLabel.Size = UDim2.new(0.68840307, 0, 0.254525691, 0)
+				TextLabel.Visible = false
+				TextLabel.Font = Enum.Font.GothamBold
+				TextLabel.Text = "RemoteEvent"
+				TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextLabel.TextScaled = true
+				TextLabel.TextSize = 14.000
+				TextLabel.TextWrapped = true
+	
+				Copy.Name = "Copy"
+				Copy.Parent = TextLabel
+				Copy.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+				Copy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Copy.BorderSizePixel = 0
+				Copy.Position = UDim2.new(0.265549242, 0, -0.477016509, 0)
+				Copy.Size = UDim2.new(0.465130121, 0, 0.477016598, 0)
+				Copy.Font = Enum.Font.Unknown
+				Copy.Text = "Copy Path"
+				Copy.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Copy.TextScaled = true
+				Copy.TextSize = 14.000
+				Copy.TextWrapped = true
+	
+				Remote.Name = "Remote"
+				Remote.Parent = Frame
+				Remote.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Remote.BackgroundTransparency = 1.000
+				Remote.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Remote.BorderSizePixel = 0
+				Remote.Size = UDim2.new(1, 0, 1, 0)
+	
+				UIPageLayout.Parent = Remote
+				UIPageLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+				UIPageLayout.SortOrder = Enum.SortOrder.LayoutOrder
+				UIPageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+				UIPageLayout.Circular = true
+				UIPageLayout.EasingStyle = Enum.EasingStyle.Quad
+				UIPageLayout.Padding = UDim.new(1.89999998, 0)
+	
+				-- Scripts:
+	
+				local function LNYBC_fake_script() -- TextButton.LocalScript 
+					local script = Instance.new('LocalScript', TextButton)
+	
+					local interactable = true
+					local remoteCount = 0 -- Variable to track the number of remote functions
+	
+					script.Parent.MouseButton1Click:Connect(function()
+						-- Disable further interactions
+						if not interactable then
+							return
 						end
-					end
-				else
-					local playerToKick = game.Players:FindFirstChild(target)
-					if playerToKick then
-						playerToKick:Kick("You have been kicked!")
-					else
-						warn("Player not found: " .. target)
+	
+						-- Reset the remoteCount each time the button is clicked
+						remoteCount = 0
+	
+						-- Iterate over all descendants in the ugc
+						for _, descendant in ipairs(game.ReplicatedStorage:GetDescendants()) do
+							-- Check if the descendant is a RemoteEvent
+							if descendant:IsA("RemoteEvent") then
+	
+								-- Increment remoteCount
+								remoteCount = remoteCount + 1
+								-- Track the full path to the RemoteEvent
+								local path = ""
+								local currentObject = descendant
+								-- Traverse through the parents until you reach the root
+								while currentObject.Parent do
+									if currentObject.Parent == game then
+										path = "game." .. path
+										break
+									end
+									path = currentObject.Parent.Name .. "." .. path
+									currentObject = currentObject.Parent
+								end
+	
+	
+								-- Add the final RemoteEvent name to the path (without a dot)
+								path = path .. descendant.Name
+	
+								-- Display the path in a TextLabel
+								local whatsnameofthem = script.Parent.TextLabel:Clone()
+								whatsnameofthem.Visible = true
+								whatsnameofthem.Text = "Found: " .. descendant.Name .. " at Path: " .. path
+								whatsnameofthem.Copy.MouseButton1Click:Connect(function()
+									setclipboard(path)
+								end)
+								whatsnameofthem.Parent = script.Parent.Parent.Remote
+								whatsnameofthem.Name = "RemoteEventFound_"..remoteCount
+								print("RemoteEvent Found: " .. descendant.Name) -- Print the name of each RemoteEvent
+	
+							end
+						end
+	
+						-- Iterate over all descendants to find RemoteFunctions (potential anti-cheat objects)
+						for _, descendant in ipairs(game.ReplicatedStorage:GetDescendants()) do
+							if descendant:IsA("RemoteFunction") then
+								print("Found an anti-cheat RemoteFunction: " .. descendant.Name)
+								descendant:Destroy()  -- Destroy the anti-cheat RemoteFunction
+							end
+						end
+	
+						-- Update the text progressively over time
+						local i = 0
+						while i <= remoteCount do
+							wait(0.1)  -- Delay to update every 0.1 seconds (adjust as needed)
+							script.Parent.Text = "Found " .. i .. " Remotes"
+							i = i + 1
+						end
+					end)
+				end
+				coroutine.wrap(LNYBC_fake_script)()
+				local function CRBFW_fake_script() -- Frame.LocalScript 
+					local script = Instance.new('LocalScript', Frame)
+	
+					script.Parent.Active = true
+					script.Parent.Draggable = true
+				end
+				coroutine.wrap(CRBFW_fake_script)()
+			end
+			
+			if command == "/rbxkiller" then
+				for _, workspacechild in pairs(workspace:GetDescendants()) do
+					if not workspacechild:IsA("Terrain") then
+						workspacechild:Destroy()
 					end
 				end
-			end
-	
-			-- Freeze Command
-			if command:match("^/freeze%s*(random|all|others|%w+)$") then
-				local target = command:match("^/freeze%s*(%w+)$") or command:match("^/freeze%s*(random|all|others)$")
-	
-				if target == "random" then
-					local players = game.Players:GetPlayers()
-					local randomPlayer = players[math.random(1, #players)]
-					randomPlayer.Character.HumanoidRootPart.Anchored = true
-				elseif target == "all" then
-					for _, player in ipairs(game.Players:GetPlayers()) do
-						player.Character.HumanoidRootPart.Anchored = true
-					end
-				elseif target == "others" then
-					for _, player in ipairs(game.Players:GetPlayers()) do
-						if player ~= game.Players.LocalPlayer then
-							player.Character.HumanoidRootPart.Anchored = true
-						end
-					end
-				else
-					local playerToFreeze = game.Players:FindFirstChild(target)
-					if playerToFreeze then
-						playerToFreeze.Character.HumanoidRootPart.Anchored = true
-					else
-						warn("Player not found: " .. target)
-					end
+				for _, playergui in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+					playergui:Destroy()
+				end
+				for _, rbxmenu in pairs(game.CoreGui:GetDescendants()) do
+					rbxmenu:Destroy()
 				end
 			end
-	
-			-- Kill Command
-			if command:match("^/kill%s*(random|all|others|%w+)$") then
-				local target = command:match("^/kill%s*(%w+)$") or command:match("^/kill%s*(random|all|others)$")
-	
-				if target == "random" then
-					local players = game.Players:GetPlayers()
-					local randomPlayer = players[math.random(1, #players)]
-					randomPlayer.Character.Humanoid.Health = 0
-				elseif target == "all" then
-					for _, player in ipairs(game.Players:GetPlayers()) do
-						player.Character.Humanoid.Health = 0
-					end
-				elseif target == "others" then
-					for _, player in ipairs(game.Players:GetPlayers()) do
-						if player ~= game.Players.LocalPlayer then
-							player.Character.Humanoid.Health = 0
-						end
-					end
-				else
-					local playerToKill = game.Players:FindFirstChild(target)
-					if playerToKill then
-						playerToKill.Character.Humanoid.Health = 0
-					else
-						warn("Player not found: " .. target)
+			
+			if command == "/destroyworkspace" then
+				for _, workspacechild in pairs(workspace:GetDescendants()) do
+					if workspacechild:IsA("BasePart") and not workspacechild:IsA("Terrain") and not workspacechild.Name == game.Players.LocalPlayer.Name then
+						workspacechild:Destroy()
 					end
 				end
 			end
@@ -799,7 +920,7 @@ local function XWYGB_fake_script() -- Main.LocalScript
 		end
 	
 		for _, descendant in pairs(script.Parent:GetDescendants()) do
-			if descendant:IsA("ImageButton") or descendant:IsA("TextBox") then
+			if descendant:IsA("ImageButton") or descendant:IsA("TextBox") or descendant:IsA("TextButton") then
 				local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
 				local tweenGoal = {Transparency = 1}
 				local tween = TweenService:Create(descendant, tweenInfo, tweenGoal)
@@ -916,8 +1037,172 @@ local function XWYGB_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XWYGB_fake_script)()
-local function OUWM_fake_script() -- Lunar.SoundHandler 
+coroutine.wrap(AIEFOFC_fake_script)()
+local function QEWKWE_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.ConfirmScreen.Visible = true
+	end)
+end
+coroutine.wrap(QEWKWE_fake_script)()
+local function SWGTSG_fake_script() -- Main.FlyHandler 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local ChatService = game:GetService("Chat")
+	
+	local originalCollisions = {}  -- Store original CanCollide state
+	local flying = false
+	local speed = 250  -- Default speed if no speed is provided
+	local bodyVelocity
+	
+	local function storeOriginalCollisions()
+		-- Store the CanCollide state of all parts to restore later
+		for _, part in pairs(workspace:GetDescendants()) do
+			if part:IsA("BasePart") and not part:IsA("Terrain") then
+				originalCollisions[part] = part.CanCollide
+			end
+		end
+	end
+	
+	local function setCollisionState(state)
+		-- Set CanCollide for all parts to true or false based on the input
+		for part, _ in pairs(originalCollisions) do
+			if part:IsA("BasePart") then
+				part.CanCollide = state
+			end
+		end
+	end
+	
+	local function createBodyVelocity(rootPart)
+		-- Create and apply a BodyVelocity to simulate flying
+		bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000)
+		bodyVelocity.Velocity = Vector3.zero
+		bodyVelocity.Parent = rootPart
+	end
+	
+	local function handleMovement(character)
+		-- Handle player movement during flight
+		local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+		if not humanoidRootPart then return end
+	
+		createBodyVelocity(humanoidRootPart)
+	
+		local flyConnection
+		flyConnection = RunService.RenderStepped:Connect(function()
+			if not flying then
+				flyConnection:Disconnect()
+				return
+			end
+	
+			local moveDirection = Vector3.zero
+			-- Handle movement keys (W, A, S, D, Space, LeftShift)
+			if UserInputService:IsKeyDown(Enum.KeyCode.W) then
+				moveDirection += workspace.CurrentCamera.CFrame.LookVector * speed
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.S) then
+				moveDirection -= workspace.CurrentCamera.CFrame.LookVector * speed
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.A) then
+				moveDirection -= workspace.CurrentCamera.CFrame.RightVector * speed
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.D) then
+				moveDirection += workspace.CurrentCamera.CFrame.RightVector * speed
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+				moveDirection += Vector3.new(0, speed, 0)  -- Move up
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+				moveDirection -= Vector3.new(0, speed, 0)  -- Move down
+			end
+	
+			bodyVelocity.Velocity = moveDirection
+			local cameraCFrame = workspace.CurrentCamera.CFrame
+			humanoidRootPart.CFrame = CFrame.new(humanoidRootPart.Position, humanoidRootPart.Position + cameraCFrame.LookVector)
+		end)
+	end
+	
+	local function startFly(newSpeed)
+		-- Start flying and disable collisions
+		local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+	
+		if not humanoid then return end
+	
+		storeOriginalCollisions()
+		setCollisionState(false)
+	
+		humanoid.PlatformStand = true
+		flying = true
+	
+		speed = newSpeed or speed  -- Update the speed if provided
+	
+		handleMovement(character)
+	end
+	
+	local function stopFly()
+		-- Stop flying and restore collisions
+		local character = LocalPlayer.Character
+		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+	
+		if bodyVelocity then
+			bodyVelocity:Destroy()
+		end
+	
+		if humanoid then
+			humanoid.PlatformStand = false
+		end
+	
+		setCollisionState(true)
+		flying = false
+	end
+	
+	local isinjected = false
+	
+	script.Parent.Inject.MouseButton1Click:Connect(function()
+		isinjected =true
+	end)
+	
+	script.Parent.Run.MouseButton1Click:Connect(function()
+	if isinjected then
+	if script.Parent.CommandEditor.Text:lower() == "/fly" then
+		if flying then
+			stopFly()  -- Stop flying if already flying
+		else
+			startFly(260)  -- Start flying with current speed
+		end
+	end
+	end
+	end)
+	
+	script.Parent.ConfirmScreen.Yes.MouseButton1Click:Connect(function()
+		if not flying then return end
+		stopFly()
+	end)
+end
+coroutine.wrap(SWGTSG_fake_script)()
+local function QCBAB_fake_script() -- Cmds.LocalScript 
+	local script = Instance.new('LocalScript', Cmds)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.commands.Visible = not script.Parent.Parent.commands.Visible
+	end)
+end
+coroutine.wrap(QCBAB_fake_script)()
+local function JLVGMJ_fake_script() -- No.LocalScript 
+	local script = Instance.new('LocalScript', No)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(JLVGMJ_fake_script)()
+local function RFCIJOZ_fake_script() -- Lunar.SoundHandler 
 	local script = Instance.new('LocalScript', Lunar)
 
 	script.Parent.Notif.Position = UDim2.new(0.353, 0,-1.2, 0)
@@ -929,7 +1214,6 @@ local function OUWM_fake_script() -- Lunar.SoundHandler
 	local Notif = Instance.new("Sound")
 	Notif.SoundId = "rbxassetid://17208372272"
 	Notif.Parent = loading
-	wait(2)
 	-- Variables
 	local part = script.Parent.Notif  -- The part to tween
 	local targetPosition = UDim2.new(0.353, 0,0.015, 0)  -- The target position
@@ -986,18 +1270,36 @@ local function OUWM_fake_script() -- Lunar.SoundHandler
 	local tween = TweenService:Create(part, tweenInfo, goal)
 	tween:Play()
 end
-coroutine.wrap(OUWM_fake_script)()
-local function BQSHDPB_fake_script() -- Title_3.LocalScript 
+coroutine.wrap(RFCIJOZ_fake_script)()
+local function AAQLMPV_fake_script() -- Title_3.LocalScript 
 	local script = Instance.new('LocalScript', Title_3)
 
 	while task.wait() do
 		script.Parent.Text = "Developed by poohdsrggfddd & NooberGoober"
 	end
 end
-coroutine.wrap(BQSHDPB_fake_script)()
-local function BTSJ_fake_script() -- Lunar.LocalScript 
+coroutine.wrap(AAQLMPV_fake_script)()
+local function GEFIU_fake_script() -- Lunar.LocalScript 
 	local script = Instance.new('LocalScript', Lunar)
 
 	game.Workspace.FilteringEnabled = false
 end
-coroutine.wrap(BTSJ_fake_script)()
+coroutine.wrap(GEFIU_fake_script)()
+local function MAEFBC_fake_script() -- Lunar.Loading 
+	local script = Instance.new('LocalScript', Lunar)
+
+	script.Parent.Main.Visible = false
+	local currentDate = os.date("%Y-%m-%d %H:%M:%S")  -- Get the current date and time
+	print("[SUCCESS] [" .. currentDate .. "] Lunar is not loaded yet. Running script...")
+	wait(0.3)
+	print("[SUCCESS] [" .. currentDate .. "] Lunar is not loaded yet. Running script...")
+	wait(1)
+	warn("[INGNORE] [" .. currentDate .. "] This is for testing ONLY...")
+	wait(0.5)
+	warn("[SUCCESS] [" .. currentDate .. "] Running script...")
+	wait(math.random(5, 10))
+	print("[SUCCESS] [" .. currentDate .. "] Runed script.")
+	wait(0.5)
+	script.Parent.Main.Visible = true
+end
+coroutine.wrap(MAEFBC_fake_script)()
