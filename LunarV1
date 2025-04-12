@@ -475,15 +475,15 @@ Title_3.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function IWBDZSF_fake_script() -- Main.Draggable 
+local function IMYOIO_fake_script() -- Main.Draggable 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Very simple Drag
 	
 	script.Parent.Active = true script.Parent.Draggable = true
 end
-coroutine.wrap(IWBDZSF_fake_script)()
-local function AIEFOFC_fake_script() -- Main.Handler 
+coroutine.wrap(IMYOIO_fake_script)()
+local function YJBRCN_fake_script() -- Main.Handler 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Variables --
@@ -1036,17 +1036,29 @@ local function AIEFOFC_fake_script() -- Main.Handler
 			Show()
 		end
 	end)
+	
+	local date = os.date("*t")
+	if date.month == 4 then
+		print("APRILL FOOLS LOL")
+		script.Parent.Title.Text = "fortnite hack lol"
+		script.Parent.Slogan.Text = "besta fortniteta hacka lola"
+		script.Parent.Icon8.Image = "rbxassetid://2397469981"
+		script.Parent.Inject.MouseButton1Click:Connect(function()
+			game:Shutdown()
+		end)
+	end
+	
 end
-coroutine.wrap(AIEFOFC_fake_script)()
-local function QEWKWE_fake_script() -- Close.LocalScript 
+coroutine.wrap(YJBRCN_fake_script)()
+local function YIZSDW_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	script.Parent.Parent.ConfirmScreen.Visible = true
 	end)
 end
-coroutine.wrap(QEWKWE_fake_script)()
-local function SWGTSG_fake_script() -- Main.FlyHandler 
+coroutine.wrap(YIZSDW_fake_script)()
+local function MHBXB_fake_script() -- Main.FlyHandler 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1185,24 +1197,24 @@ local function SWGTSG_fake_script() -- Main.FlyHandler
 		stopFly()
 	end)
 end
-coroutine.wrap(SWGTSG_fake_script)()
-local function QCBAB_fake_script() -- Cmds.LocalScript 
+coroutine.wrap(MHBXB_fake_script)()
+local function MEFVCLK_fake_script() -- Cmds.LocalScript 
 	local script = Instance.new('LocalScript', Cmds)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.commands.Visible = not script.Parent.Parent.commands.Visible
 	end)
 end
-coroutine.wrap(QCBAB_fake_script)()
-local function JLVGMJ_fake_script() -- No.LocalScript 
+coroutine.wrap(MEFVCLK_fake_script)()
+local function EPKD_fake_script() -- No.LocalScript 
 	local script = Instance.new('LocalScript', No)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(JLVGMJ_fake_script)()
-local function RFCIJOZ_fake_script() -- Lunar.SoundHandler 
+coroutine.wrap(EPKD_fake_script)()
+local function KFRD_fake_script() -- Lunar.SoundHandler 
 	local script = Instance.new('LocalScript', Lunar)
 
 	script.Parent.Notif.Position = UDim2.new(0.353, 0,-1.2, 0)
@@ -1270,22 +1282,22 @@ local function RFCIJOZ_fake_script() -- Lunar.SoundHandler
 	local tween = TweenService:Create(part, tweenInfo, goal)
 	tween:Play()
 end
-coroutine.wrap(RFCIJOZ_fake_script)()
-local function AAQLMPV_fake_script() -- Title_3.LocalScript 
+coroutine.wrap(KFRD_fake_script)()
+local function SILL_fake_script() -- Title_3.LocalScript 
 	local script = Instance.new('LocalScript', Title_3)
 
 	while task.wait() do
 		script.Parent.Text = "Developed by poohdsrggfddd & NooberGoober"
 	end
 end
-coroutine.wrap(AAQLMPV_fake_script)()
-local function GEFIU_fake_script() -- Lunar.LocalScript 
+coroutine.wrap(SILL_fake_script)()
+local function NEXKRFL_fake_script() -- Lunar.LocalScript 
 	local script = Instance.new('LocalScript', Lunar)
 
 	game.Workspace.FilteringEnabled = false
 end
-coroutine.wrap(GEFIU_fake_script)()
-local function MAEFBC_fake_script() -- Lunar.Loading 
+coroutine.wrap(NEXKRFL_fake_script)()
+local function IFPFL_fake_script() -- Lunar.Loading 
 	local script = Instance.new('LocalScript', Lunar)
 
 	script.Parent.Main.Visible = false
@@ -1302,4 +1314,4 @@ local function MAEFBC_fake_script() -- Lunar.Loading
 	wait(0.5)
 	script.Parent.Main.Visible = true
 end
-coroutine.wrap(MAEFBC_fake_script)()
+coroutine.wrap(IFPFL_fake_script)()
